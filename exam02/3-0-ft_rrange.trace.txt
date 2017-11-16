@@ -1,0 +1,73 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r9p13.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Nov 10 19:56:01 PST 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam02/exam_20171111/lilam
+
+= Git history ==================================================================
+$> git -C /var/folders/cv/jp1x3tqs0575cnrz5wl1s2tr0000gp/T/tmpCUroK7/user log --pretty='%H - %an, %ad : %s'
+a30257f42c5fa1bef1a2f1f926d4341cb560fac3 - Exam 42, Fri Nov 10 19:53:02 2017 -0800 : ft_rrange
+3846431a98f7f053f292d02def16362bba0cb41b - Exam 42, Fri Nov 10 19:09:40 2017 -0800 : ft_strdup
+dd6de70113f94f64277345bb74aa1cf9e4a2d51f - Exam 42, Fri Nov 10 18:55:49 2017 -0800 : ulstr
+87b4c77e7531feae04d92812d1104f581877ee3f - Exam 42, Fri Nov 10 18:27:00 2017 -0800 : aff_last_param
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/cv/jp1x3tqs0575cnrz5wl1s2tr0000gp/T/tmpCUroK7/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  926 Nov 10 19:56 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 10 19:56 aff_last_param
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 10 19:56 ft_rrange
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 10 19:56 ft_strdup
+drwxr-xr-x  3 deepthought  deepthought  102 Nov 10 19:56 ulstr
+
+/var/folders/cv/jp1x3tqs0575cnrz5wl1s2tr0000gp/T/tmpCUroK7/user/aff_last_param:
+total 8
+-rwxr-xr-x  1 deepthought  deepthought  241 Nov 10 19:56 aff_last_param.c
+
+/var/folders/cv/jp1x3tqs0575cnrz5wl1s2tr0000gp/T/tmpCUroK7/user/ft_rrange:
+total 8
+-rw-r--r--  1 deepthought  deepthought  379 Nov 10 19:56 ft_rrange.c
+
+/var/folders/cv/jp1x3tqs0575cnrz5wl1s2tr0000gp/T/tmpCUroK7/user/ft_strdup:
+total 8
+-rw-r--r--  1 deepthought  deepthought  269 Nov 10 19:56 ft_strdup.c
+
+/var/folders/cv/jp1x3tqs0575cnrz5wl1s2tr0000gp/T/tmpCUroK7/user/ulstr:
+total 8
+-rw-r--r--  1 deepthought  deepthought  413 Nov 10 19:56 ulstr.c
+ 
+= ft_rrange ====================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_rrange.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./yt4vhsga2opovevl8x6umxuh 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./vn2brf3mpsbhef0zy6q0rtc6 "21" "2313" "12"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./25h8zf9uazf5g0twrdcjlwir "2147483647" "2147483640" "7"
+Command './25h8zf9uazf5g0twrdcjlwir "2147483647" "2147483640" "7"' got killed by a Segmentation fault (Signal -11)
+Grade: 0
+
+= Final grade: 0 ===============================================================

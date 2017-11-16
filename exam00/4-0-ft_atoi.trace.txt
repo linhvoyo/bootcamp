@@ -1,0 +1,61 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r6p1.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Oct 27 19:41:04 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam00/exam_20171028/lilam
+
+= Git history ==================================================================
+$> git -C /var/folders/l3/8_tld5ns47x4fyt18dwtt6fm0000gp/T/tmpR2ObQQ/user log --pretty='%H - %an, %ad : %s'
+c7595f8770a8a2f4d7da3f13a70c1b6781e61bea - Exam 42, Fri Oct 27 19:28:19 2017 -0700 : ft_strrev.c
+230a27bf97e82f661754e43c46e580b4d810c626 - Exam 42, Fri Oct 27 18:55:36 2017 -0700 : maff_alpha.c
+6fe24ce571bd44fb9015612108855a8ded9804cc - Exam 42, Fri Oct 27 18:39:47 2017 -0700 : hello.c
+fdb9966ff32fa0f7d57b41cb2dae31f48b941b2c - Exam 42, Fri Oct 27 18:28:34 2017 -0700 : only_a.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/l3/8_tld5ns47x4fyt18dwtt6fm0000gp/T/tmpR2ObQQ/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1020 Oct 27 19:41 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 27 19:41 ft_strrev
+drwxr-xr-x  4 deepthought  deepthought   136 Oct 27 19:41 hello
+drwxr-xr-x  4 deepthought  deepthought   136 Oct 27 19:41 maff_alpha
+drwxr-xr-x  3 deepthought  deepthought   102 Oct 27 19:41 only_a
+
+/var/folders/l3/8_tld5ns47x4fyt18dwtt6fm0000gp/T/tmpR2ObQQ/user/ft_strrev:
+total 8
+-rw-r--r--  1 deepthought  deepthought  260 Oct 27 19:41 ft_strrev.c
+
+/var/folders/l3/8_tld5ns47x4fyt18dwtt6fm0000gp/T/tmpR2ObQQ/user/hello:
+total 32
+-rw-r--r--  1 deepthought  deepthought  12288 Oct 27 19:41 .hello.c.swp
+-rw-r--r--  1 deepthought  deepthought    330 Oct 27 19:41 hello.c
+
+/var/folders/l3/8_tld5ns47x4fyt18dwtt6fm0000gp/T/tmpR2ObQQ/user/maff_alpha:
+total 32
+-rw-r--r--  1 deepthought  deepthought  12288 Oct 27 19:41 .maff_alpha.c.swp
+-rw-r--r--  1 deepthought  deepthought    297 Oct 27 19:41 maff_alpha.c
+
+/var/folders/l3/8_tld5ns47x4fyt18dwtt6fm0000gp/T/tmpR2ObQQ/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1004 Oct 27 19:41 only_a.c
+ 
+= ft_atoi ======================================================================
+Nothing turned in
+Grade: 0
+
+= Final grade: 0 ===============================================================

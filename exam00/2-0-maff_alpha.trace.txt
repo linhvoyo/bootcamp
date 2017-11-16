@@ -1,0 +1,61 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r4p3.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Oct 27 18:58:32 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam00/exam_20171028/lilam
+
+= Git history ==================================================================
+$> git -C /var/folders/dc/6kczmvrs7gs8rqbcfbzf_k9m0000gp/T/tmp60xrEI/user log --pretty='%H - %an, %ad : %s'
+230a27bf97e82f661754e43c46e580b4d810c626 - Exam 42, Fri Oct 27 18:55:36 2017 -0700 : maff_alpha.c
+6fe24ce571bd44fb9015612108855a8ded9804cc - Exam 42, Fri Oct 27 18:39:47 2017 -0700 : hello.c
+fdb9966ff32fa0f7d57b41cb2dae31f48b941b2c - Exam 42, Fri Oct 27 18:28:34 2017 -0700 : only_a.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/dc/6kczmvrs7gs8rqbcfbzf_k9m0000gp/T/tmp60xrEI/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  788 Oct 27 18:58 __GIT_HISTORY
+drwxr-xr-x  4 deepthought  deepthought  136 Oct 27 18:58 hello
+drwxr-xr-x  4 deepthought  deepthought  136 Oct 27 18:58 maff_alpha
+drwxr-xr-x  3 deepthought  deepthought  102 Oct 27 18:58 only_a
+
+/var/folders/dc/6kczmvrs7gs8rqbcfbzf_k9m0000gp/T/tmp60xrEI/user/hello:
+total 32
+-rw-r--r--  1 deepthought  deepthought  12288 Oct 27 18:58 .hello.c.swp
+-rw-r--r--  1 deepthought  deepthought    330 Oct 27 18:58 hello.c
+
+/var/folders/dc/6kczmvrs7gs8rqbcfbzf_k9m0000gp/T/tmp60xrEI/user/maff_alpha:
+total 32
+-rw-r--r--  1 deepthought  deepthought  12288 Oct 27 18:58 .maff_alpha.c.swp
+-rw-r--r--  1 deepthought  deepthought    297 Oct 27 18:58 maff_alpha.c
+
+/var/folders/dc/6kczmvrs7gs8rqbcfbzf_k9m0000gp/T/tmp60xrEI/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1004 Oct 27 18:58 only_a.c
+ 
+= maff_alpha ===================================================================
+$> gcc -Wextra -Wall -Werror maff_alpha.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./akuhpnp9f081c1mo1r9os7ye test1.prm
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

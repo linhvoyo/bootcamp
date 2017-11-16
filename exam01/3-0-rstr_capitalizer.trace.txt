@@ -1,0 +1,86 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z2r4p25.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Nov  3 21:47:05 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam01/exam_20171104/lilam
+
+= Git history ==================================================================
+$> git -C /var/folders/2z/m3w0g8lx60sdd_r8cjyy4_zr0000gp/T/tmpthbnTp/user log --pretty='%H - %an, %ad : %s'
+a39d97ba28b1f8b4ce917d62c1421bd7caa4e36d - Exam 42, Fri Nov 3 21:46:03 2017 -0700 : rstr_capitalizer
+23e3abd666d3fedfcb57d8f10c36cc5fe6262d3c - Exam 42, Fri Nov 3 20:53:27 2017 -0700 : last_word
+d3313feabc6e01d1edb0caa67bc3a62bbe40fcc6 - Exam 42, Fri Nov 3 19:04:59 2017 -0700 : ft_strcpy
+b5678308fcae483e93537d49f382ea6a5d1bcff0 - Exam 42, Fri Nov 3 18:22:51 2017 -0700 : edit file maffalpha file name to maff_revalpha.c
+b7ad60b72b28e97480b4da67dd313be395ad7bfe - Exam 42, Fri Nov 3 18:20:17 2017 -0700 : maff_revalpha lv 0
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/2z/m3w0g8lx60sdd_r8cjyy4_zr0000gp/T/tmpthbnTp/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  1340 Nov  3 21:47 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  3 21:47 ft_strcpy
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  3 21:47 last_word
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  3 21:47 maff_revalpha
+drwxr-xr-x  3 deepthought  deepthought   102 Nov  3 21:47 rstr_capitalizer
+
+/var/folders/2z/m3w0g8lx60sdd_r8cjyy4_zr0000gp/T/tmpthbnTp/user/ft_strcpy:
+total 8
+-rw-r--r--  1 deepthought  deepthought  130 Nov  3 21:47 ft_strcpy.c
+
+/var/folders/2z/m3w0g8lx60sdd_r8cjyy4_zr0000gp/T/tmpthbnTp/user/last_word:
+total 8
+-rw-r--r--  1 deepthought  deepthought  871 Nov  3 21:47 last_word.c
+
+/var/folders/2z/m3w0g8lx60sdd_r8cjyy4_zr0000gp/T/tmpthbnTp/user/maff_revalpha:
+total 8
+-rw-r--r--  1 deepthought  deepthought  266 Nov  3 21:47 maff_revalpha.c
+
+/var/folders/2z/m3w0g8lx60sdd_r8cjyy4_zr0000gp/T/tmpthbnTp/user/rstr_capitalizer:
+total 8
+-rw-r--r--  1 deepthought  deepthought  698 Nov  3 21:47 rstr_capitalizer.c
+ 
+= rstr_capitalizer =============================================================
+$> gcc -Wextra -Wall -Werror rstr_capitalizer.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./wvusret2vp4z2teve6dio3g0 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./4s2woa2oissq75s7mlqj6tpc 
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./qhlb676hyteck9t587uzqr31 "Ms4g"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./t1tzg365z346sz117d0sc1b3 "4r1leQmuoMjN2I5209BIAPd5ERiufCr   ?o0Cz8IHP8wxVaU 	ckqOeNdZSynPB1Af  bVk2Ea	?"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+--- user_output_test4	2017-11-03 21:47:07.000000000 -0700$
++++ test4.output	2017-11-03 21:47:07.000000000 -0700$
+@@ -1 +1 @@$
+-4r1leqmuomjn2i5209biapd5eriufcR   ?o0cz8ihp8wxvaU 	ckqoendzsynpb1aF  bvk2eA	^_$
++4r1leqmuomjn2i5209biapd5eriufcR   ?o0cz8ihp8wxvaU 	ckqoendzsynpb1aF  bvk2eA	?$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

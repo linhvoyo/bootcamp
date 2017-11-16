@@ -1,0 +1,54 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1z1r4p4.42.us.org
+Darwin 15.6.0 x86_64
+$> date
+Fri Oct 27 18:42:07 PDT 2017
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 8.0.0 (clang-800.0.38)
+Target: x86_64-apple-darwin15.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2017/piscine-c-exam00/exam_20171028/lilam
+
+= Git history ==================================================================
+$> git -C /var/folders/8b/c1lsvhcx1nj6g9k81mfz1q580000gp/T/tmpkHrlmb/user log --pretty='%H - %an, %ad : %s'
+6fe24ce571bd44fb9015612108855a8ded9804cc - Exam 42, Fri Oct 27 18:39:47 2017 -0700 : hello.c
+fdb9966ff32fa0f7d57b41cb2dae31f48b941b2c - Exam 42, Fri Oct 27 18:28:34 2017 -0700 : only_a.c
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/8b/c1lsvhcx1nj6g9k81mfz1q580000gp/T/tmpkHrlmb/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  489 Oct 27 18:42 __GIT_HISTORY
+drwxr-xr-x  4 deepthought  deepthought  136 Oct 27 18:42 hello
+drwxr-xr-x  3 deepthought  deepthought  102 Oct 27 18:42 only_a
+
+/var/folders/8b/c1lsvhcx1nj6g9k81mfz1q580000gp/T/tmpkHrlmb/user/hello:
+total 32
+-rw-r--r--  1 deepthought  deepthought  12288 Oct 27 18:42 .hello.c.swp
+-rw-r--r--  1 deepthought  deepthought    330 Oct 27 18:42 hello.c
+
+/var/folders/8b/c1lsvhcx1nj6g9k81mfz1q580000gp/T/tmpkHrlmb/user/only_a:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1004 Oct 27 18:42 only_a.c
+ 
+= hello ========================================================================
+$> gcc -Wextra -Wall -Werror hello.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./k25cl68h4i3lwyc8txfjka3f test1.prm
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
